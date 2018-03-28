@@ -9,6 +9,9 @@ class PostsController < ApplicationController
 
 	def new
 		@post = Post.new
+		post.title = "Title Goes Here"
+		post.description = "Desc goes here..."
+		post.save
 
 	end
 	def create
